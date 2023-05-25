@@ -3,14 +3,14 @@ import java.time.LocalDate;
 import java.time.format.TextStyle;
 import java.util.Locale;
 
-import javax.tools.JavaFileManager.Location;
+
 
 
 public class ManipulacaoDStringsEDatas {
     
     public static void main(String[] args) {
         String nome = "igor";
-        String Locale = "";
+       
         
         
         // iso 8601
