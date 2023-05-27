@@ -1,4 +1,4 @@
-package OrientacaoObjetos;
+package orientacaoObjetos;
 
 
 public class HelloWord {
@@ -13,7 +13,14 @@ public class HelloWord {
         cachorro1.peso = 5.5;
         cachorro1.tamanhoDoRabo = 5;
 
-        System.out.println(cachorro1);
+      cachorro1.latir();
+      cachorro1.pegar();
+      System.out.println("O Cachorro pegou uma " + cachorro1.pegar());
+
+      System.out.println("O Cachoro esta " + cachorro1.interagir("carinho"));
+      System.out.println("O Cachoro esta " + cachorro1.interagir("nada"));
+      System.out.println("O Cachoro esta " + cachorro1.interagir("Vai dormir!"));
+
         
     }
     

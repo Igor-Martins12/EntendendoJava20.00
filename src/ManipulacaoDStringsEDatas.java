@@ -15,6 +15,7 @@ public class ManipulacaoDStringsEDatas {
         
         // iso 8601
         LocalDate hoje = LocalDate.now();
+        // locale nao se utiliza mais na versao 20.0
         Locale brasil = new Locale("pt", "BR");
         // System.out.println(hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil));
         String diaSemana = hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil);
