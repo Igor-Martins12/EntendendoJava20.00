@@ -10,13 +10,14 @@ public class ManipulacaoDStringsEDatas {
     
     public static void main(String[] args) {
         String nome = "igor";
+        
        
         
         
         // iso 8601
         LocalDate hoje = LocalDate.now();
         // locale nao se utiliza mais na versao 20.0
-        Locale brasil = // new Locale("pt", "BR");
+        Locale brasil = new Locale("pt", "BR");
         // System.out.println(hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil));
         String diaSemana = hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil);
         String saudacao;

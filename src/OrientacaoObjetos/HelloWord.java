@@ -5,22 +5,16 @@ public class HelloWord {
 
     public static void main(String[] args) {
 
-        Cachorro cachorro1 = cachorro1 = new Cachorro();
+        Cachorro cachorro1 = new Cachorro();
+        Cachorro cachorro2 = new Cachorro("Puppy", "marron", 25, 5.5, "nada", 5 );
 
-        cachorro1.nome = "Puppy";
-        cachorro1.cor = "Marro";
-        cachorro1.altura = 25;
-        cachorro1.peso = 5.5;
-        cachorro1.tamanhoDoRabo = 5;
-
-      cachorro1.latir();
-      cachorro1.pegar();
-      System.out.println("O Cachorro pegou uma " + cachorro1.pegar());
-
-      System.out.println("O Cachoro esta " + cachorro1.interagir("carinho"));
-      System.out.println("O Cachoro esta " + cachorro1.interagir("nada"));
-      System.out.println("O Cachoro esta " + cachorro1.interagir("Vai dormir!"));
-
+        
+        System.out.println(cachorro2.getNome());
+        System.out.println(cachorro2.getPeso());
+        System.out.println("O Cachorro pegou uma " + cachorro1.pegar());
+          System.out.println("O Cachoro esta " + cachorro1.interagir("carinho"));
+            System.out.println("O Cachoro esta " + cachorro1.interagir("nada"));
+              System.out.println("O Cachoro esta " + cachorro1.interagir("Vai dormir!"));
         
     }
     
