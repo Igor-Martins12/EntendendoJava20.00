@@ -1,29 +1,42 @@
 package orientacaoObjetos;
 // atributos
-public class Cachorro {
-  private String nome; 
-  private String cor;
-  private int altura;
-  private double peso;
+public class Cachorro extends animal {
+
+  
+  static int numerodeCachorro;
+  
   private int tamanhoDoRabo;
-  private String estadoDoEspirito;
+
 
    // construtures
-   public Cachorro(){}
+
    
- public Cachorro(String nome, String cor, int altura, double peso, String estadoDeEspirito, int tamanhoDoRabo) {
-  this.nome = nome;
+ public Cachorro(String nome, String cor, int altura, double peso) {
+  super(nome, cor, peso);
     this.cor = cor;
     this.altura = altura;
     this.peso = peso;
-    this.tamanhoDoRabo = tamanhoDoRabo;
     this.estadoDoEspirito = "";
+    
+    numerodeCachorro ++;
     
   }   
   
   
   
-   // metodos 
+  // metodos 
+ 
+
+
+public static int getNumerodeCachorro() {
+    return numerodeCachorro;
+  }
+
+  public static void setNumerodeCachorro(int numerodeCachorro) {
+    Cachorro.numerodeCachorro = numerodeCachorro;
+  }
+
+   
   public String getNome() {
     return this.nome;
   }
@@ -66,14 +79,8 @@ public class Cachorro {
   }
   public void setEstadoDoEspirito(String estadoDoEspirito) {
     this.estadoDoEspirito = estadoDoEspirito;
-    
-  }
-  public void comer(){
-
-  }
-  public void latir(){
-    System.out.println("au au" );
-  }
+      }
+  
   public String pegar() { 
     return "Bolinha";
   }
@@ -97,4 +104,17 @@ public class Cachorro {
     //   }
       // return estadoDoEspirito; 
   }
+
+  @Override
+  public String toString() {
+    return "Cachorro [nome=" + nome +  "]";
+  }
+
+
+
+  @Override
+  public void soar() {
+   System.out.println("Au Au");
+  }
+
 }
